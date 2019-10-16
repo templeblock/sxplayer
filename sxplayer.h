@@ -177,6 +177,8 @@ struct sxplayer_frame {
     int color_range;    // video color range (any of SXPLAYER_COL_RNG_*)
     int color_primaries;// video color primaries (any of SXPLAYER_COL_PRI_*)
     int color_trc;      // video color transfer (any of SXPLAYER_COL_TRC_*)
+    float signal_peak;  // highest signal value relative to the maximum SDR signal
+                        // value (as described by ITU-R BT.2100), 0 if undefined/unknown.
 };
 
 struct sxplayer_info {
